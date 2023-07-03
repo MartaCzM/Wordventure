@@ -1,22 +1,17 @@
-const scoreDisplay = document.getElementById(score-display)
-const questionDisplay = document.getElementById(question-display)
+function playGame(gameName) {
+    switch (gameName) {
+        case 1:
+            alert("Playing Synonym Game");
+            break;
+        case 2:
+            alert("Playing Antonym Game");
+            break;
+        case 3:
+            alert("Reading the game rules");
+            break;
+    }
+}
 
-const questions = [
-    {
-        quiz: ['value', 'estimate', 'evaluate'],
-        options: ['jusry', 'assess'],
-        correct: 2
-    },
-
-    {
-        quiz: ['close', 'near', 'next'],
-        options: ['adjacent', 'trace'],
-        correct: 1
-    },
-
-    {
-        quiz: ['foreign', 'national', 'ethnic'],
-        options: ['exotic', 'unknown'],
-        correct: 1
-    },
-]
+function quitGame() {
+    alert("Goodbye!")
+}
