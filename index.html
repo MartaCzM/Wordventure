@@ -14,81 +14,37 @@
     <title>Wordventure</title>
 </head>
 <body>
-    <h1 class="heading">
+    <header>
+        <h1 class="heading">
         <img class="logo" src="assets/images/word.png" alt="logo"> Wordwenture
-    </h1>
+        </h1>
+    </header>
 
-    <div id="game-menu">
+    <nav id="game-menu">
         <button data-type="game-info" class="btn btn-size btn--color"> About the Game</button>
         <button data-type="synonym" class="btn btn-size btn--color"> Synonym Game</button>
-        <button data-type="antonym" class="btn btn-size btn--color"> Antonym Game</button>
         <button data-type="quit" class="btn btn-size btn--red"> Quit</button>
-    </div>
-    <div id="game-area"> 
-    <div id="synonym-game">
+    </nav>
+    <section id="game-area"> 
 
-    <div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/images/WORDVENTURE.png" alt="Wordventure game card back" style="width:300px;height:400px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Synonym</h1>
-                        <p>Choose the right answer!</p>
-                    <div class="question" id="synonym-question-display">
+        <div class="synonym-game">
+            <div class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/images/WORDVENTURE.png" alt="Wordventure game card back" style="width:300px;height:400px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Synonym</h1>
+                            <p>Choose the right answer!</p>
+                            <div class="question"></div>
+                            <div class="options"></div>
+                            <button class="nextButton" onclick="nextQuestion()">Next Question</button>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-
-    <div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/images/WORDVENTURE.png" alt="Wordventure game card back" style="width:300px;height:400px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Synonym</h1>
-                        <p>Choose the right answer!</p>
-                    <div class="question" id="synonym-question-display">
-                    </div>
-                </div>
-            </div>
-    </div>
-
-    <div >
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="assets/images/WORDVENTURE.png" alt="Wordventure game card back" style="width:300px;height:400px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Synonym</h1>
-                        <p>Choose the right answer!</p>
-                    <div class="question" id="synonym-question-display">
-                    </div>
-                </div>
-            </div>
-    </div>
-
-    <div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="assets/images/WORDVENTURE.png" alt="Wordventure game card back" style="width:300px;height:400px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Synonym</h1>
-                    <p>Choose the right answer!</p>
-                <div class="question" id="synonym-question-display">
-                </div>
-            </div>
-        </div>
-</div>
-</div>
-
-</div>
+    </section>
 
     <script src="assets/javascript/game.js"></script>
 </body>
