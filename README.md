@@ -1,1 +1,3 @@
 # Wordventure
+
+## About the game
