@@ -37,4 +37,13 @@ const questions = [
     }
   ];
   
- 
+  let score = 0; // Player score
+  let currentQuestion = 0; // Current question index
+  
+  // Function to initialize the game
+  function initializeGame() {
+    const menuButtons = document.querySelectorAll("#game-menu button");
+    menuButtons.forEach((button) => {
+      button.addEventListener("click", handleMenuClick);
+    });
+  }
