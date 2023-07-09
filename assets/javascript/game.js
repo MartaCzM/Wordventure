@@ -142,4 +142,48 @@ function handleMenuClick(event) {
     });
   }
 
+  /**
+   * Function to check the selected answer
+   * display result and move to the next question
+   * quit game function
+   */
+function checkAnswer(selectedAnswer, correctAnswer) {
+    if (selectedAnswer === correctAnswer) {
+      score += 10;
+      showResult(true);
+    } else {
+      score -= 10;
+      showResult(false);
+    }
+  }
   
+  function showResult(isCorrect) {
+    const optionsElement = document.querySelector(".options");
+    const buttons = optionsElement.querySelectorAll("button");
+  
+    buttons.forEach((button) => {
+      if (button.textContent === questions[currentQuestion].answer) {
+        button.classList.add("correct");
+      } else {
+        button.classList.add("incorrect");
+      }
+      button.disabled = true;
+    });
+  
+    currentQuestion++;
+    document.querySelector(".nextButton").disabled = false;
+  }
+
+  function nextQuestion() {
+    const nextButton = document.querySelector(".nextButton");
+    nextButton.disabled = true;
+    displayQuestion();
+  }
+  
+  function quitGame() {
+    const gameArea = document.querySelector("#game-area");
+    gameArea.innerHTML = "<h2>Wordventure</h2><p>Thanks for playing!</p>";
+  }
+  
+  // Call the initializeGame function to start the game
+  initializeGame();
