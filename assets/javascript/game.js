@@ -34,6 +34,21 @@ const questions = [
       question: "Intelligent",
       options: ["Clever", "Quick", "Agile"],
       answer: "Clever"
+    },
+    {
+      question: "Confident",
+      options: ["Talkative", "Optimistic", "Insecure"],
+      answer: "Optimistic"
+    },
+    {
+      question: "Pleasant",
+      options: ["Enjoyable", "Atractive", "Agitated"],
+      answer: "Enjoyable"
+    },
+    {
+      question: "Childish",
+      options: ["Young", "Immature", "Energetic"],
+      answer: "Immature"
     }
   ];
   
@@ -72,7 +87,7 @@ function handleMenuClick(event) {
       quitGame();
     }
   }
-  
+
 /**  
  * Function to show game information
  * Function to start the synonym game

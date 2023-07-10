@@ -33,7 +33,7 @@ body {
 #game-area {
     background-color: #acd5f0;
     box-sizing: border-box;
-    width: 110%;
+    width: 100%;
     height: 65vh;
     max-height: 450px;
     max-width: 900px;
@@ -102,12 +102,12 @@ btn--color:active,
 .card {
     display: flex;
     justify-content: center;
-    width: 900px;
+
 }
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
+    width: 500px;
     height: 400px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
@@ -177,4 +177,31 @@ btn--color:active,
     margin: 20px 0;
     padding: 10px 20px;
     font-size: 16px;
+  }
+
+  /* --------- Media queries */
+
+  @media (max-width: 414px) {
+    #game-menu {
+        width: 100%;
+    }
+
+    #game-area {
+        width: 100%;
+    }
+
+    .btn-size {
+        margin: 0 2px;
+        padding: 1px;
+        border: 1px solid;
+        width: 20px;
+        height: 20px;
+        font-size: 0.5rem;
+    }
+    .btn-size::after {
+        font-size: 0.5rem;
+        left: -0.5rem;
+    }
+
+
   }
