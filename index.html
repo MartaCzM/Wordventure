@@ -16,24 +16,27 @@
 <body>
     <header>
         <h1 class="heading">
-        <img class="logo" src="assets/images/word.png" alt="logo"> Wordwenture
+        <img class="logo" src="assets/images/word.png" alt="logo"> Wordventure
         </h1>
     </header>
 
-    <nav id="game-menu">
-        <button data-type="game-info" class="btn btn-size btn--color"> About the Game</button>
-        <button data-type="synonym" class="btn btn-size btn--color"> Synonym Game</button>
-        <button data-type="quit" class="btn btn-size btn--red"> Quit</button>
-    </nav>
-    <section id="game-area"> 
-
-        <div class="synonym-game">
-            <div class="card">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/WORDVENTURE.png" alt="Wordventure game card back with logo" style="width:500px;height:400px;">
-                        </div>
+    <section id="game-menu">
+        <nav>
+            <button data-type="game-info" class="btn btn-size btn--color"> About the Game</button>
+            <button data-type="synonym" class="btn btn-size btn--color"> Synonym Game</button>
+            <button data-type="quit" class="btn btn-size btn--red"> Quit</button>
+        </nav>
+    </section>
+    
+<main id="game-area"> 
+    <section>
+            <div class="synonym-game">
+                <div class="card">
+                    <div class="flip-card">
+                         <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="assets/images/WORDVENTURE.png" alt="Wordventure game card back with logo" style="width:500px;height:400px;">
+                            </div>
                         <div class="flip-card-back">
                             <h1>Synonym</h1>
                             <p>Choose the right answer!</p>
@@ -44,8 +47,22 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+</main>
 
+    <!-- The footer will include social media links-->
+    <footer id="background"> 
+        <ul class="media-links">
+            <li>
+                <a href="https://github.com/" target="_blank" rel="noopener" aria-label="Visit my GitHub portofolio (opens in a new tab)"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="Visit LinkedIn page (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>

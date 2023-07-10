@@ -60,7 +60,6 @@ const questions = [
 
   let score = 0; 
   let currentQuestion = 0; 
-  
 
   function initializeGame() {
     const menuButtons = document.querySelectorAll("#game-menu button");
@@ -94,7 +93,7 @@ function handleMenuClick(event) {
  */ 
   function showGameInfo() {
     const gameArea = document.querySelector("#game-area");
-    gameArea.innerHTML = "<h2>Wordventure - Synonym Game</h2><p>Test your knowledge of synonyms by choosing the correct word that has a similar meaning to the given word.</p>";
+    gameArea.innerHTML = "<h2>Wordventure - Synonym Game</h2><p>Test your knowledge of synonyms by choosing the correct word that has a similar meaning to the given word.</p><br><h2>Game Rules</h2><p>Each question will have three options to choose from. The player has to answer with the right one in order to have 10 points added to his score, if the player's answer is wrong, then 10 points will be subtracted from the final score.</p>";
   }
   
   function startSynonymGame() {
