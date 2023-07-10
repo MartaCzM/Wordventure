@@ -179,29 +179,4 @@ btn--color:active,
     font-size: 16px;
   }
 
-  /* --------- Media queries */
-
-  @media (max-width: 414px) {
-    #game-menu {
-        width: 100%;
-    }
-
-    #game-area {
-        width: 100%;
-    }
-
-    .btn-size {
-        margin: 0 2px;
-        padding: 1px;
-        border: 1px solid;
-        width: 20px;
-        height: 20px;
-        font-size: 0.5rem;
-    }
-    .btn-size::after {
-        font-size: 0.5rem;
-        left: -0.5rem;
-    }
-
-
-  }
+ 
