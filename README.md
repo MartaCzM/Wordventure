@@ -35,7 +35,7 @@ Wordventure is a simple web-based game that tests player knowledge while also de
 
 ## Footer
 
-
+* The footer is including two links to one of the social media platforms, such as LinkedIn and a link to the GitHub profile
 
 
 
