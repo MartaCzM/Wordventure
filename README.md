@@ -46,6 +46,9 @@ The below color grid was created by using https://contrast-grid.eightshapes.com
 ### Game Layout
 
 * The main game is incorporated within a card, which flips when the mouse is hoverd or clicked over.
+
+![Screenshot](assets/images/game-back-image.png)
+
 * It includes a heading of synonym, followerd by a simple phrase that is saying to the player to "Choose the right answer!".
 * The interactive game part is including a word and three options to choose from. If the player is choosing the right option this will be coloured green, but if the wrong option is chosen, then is will be coloured red.
 * The ponits are added as follow: 10 points are added for each right answer and 10 points are subtracted for each wrong answer. 
