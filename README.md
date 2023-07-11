@@ -6,6 +6,19 @@ Wordventure is a simple web-based game that tests player knowledge while also de
 
 ![Screenshot](assets/images/responsive.png)
 
+## Planning
+
+The game idea was influenced by my wish in becoming confident of my English vocabulary, as frequently is hard to associate words with their synonyms. 
+
+## Target Audience:
+
+* The game is for everyone that wants to improve their English skill
+* It can be played by adults, teenagers as well as children.
+
+## Game colors
+
+The color scheme was simply based on blue colors, adding some black color to the game logo for contrast
+
 ## Features
 
 * The header, which appears at the top of the page, displays the game name and includes the game logo: Wordventure.
@@ -35,7 +48,11 @@ Wordventure is a simple web-based game that tests player knowledge while also de
 
 ## Footer
 
-* The footer is including two links to one of the social media platforms, such as LinkedIn and a link to the GitHub profile
+* The footer is including two links, displayed with Font Awesome icons, to platforms such as LinkedIn and GitHub profile.
+
+![Screenshot](assets/images/footer.png)
+
+
 
 
 
